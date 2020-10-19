@@ -28,27 +28,45 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .h-100vh {
+            height: 100vh;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .c-wh {
+            color: white;
+        }
+
+        .pt-3 {
+            padding-top: 3%;
+        }
+
+        .bg {
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 
-<body onload="startSpin();" style="background-image: url(bg.jpg); background-repeat: no-repeat;   background-size: cover;
-">
+<body onload="startSpin();" class="bg">
     <div class="container">
-
-        <!-- <div style="display: flex; align-items: center; justify-content: center;" class="layer">
-            <img src="layer1.png" style="border: 2px solid red; height: 100vh; width:80%;" id="image1" />
-        </div> -->
-        <!-- <div class="bg-ctr"><img class="center" src="bg.jpg" id="main-bg" width="100%" /></div> -->
-        <div class="layer" style=" width: 100%; padding-top: 3%;">
-            <h1 class="center" style="color: white; width:100%; ">404 Not Found
-            </h1>
+        <div class="layer w-100 pt-3">
+            <h1 class="center w-100 c-wh">404 Not Found</h1>
         </div>
-        <div class="layer"><img class="center" src="layer1.png" id="myimage1" style="height: 100vh; width:60%; " />
+        <div class="layer"><img class="center h-100vh w-60" src="layer1.png" id="myimage1" />
         </div>
-
-        <div class="layer"><img class="center" src="layer3.png" id="myimage3" style="height: 100vh; width:100%; " />
+        <div class="layer"><img class="center h-100vh w-100" src="layer3.png" id="myimage3" />
         </div>
-        <div class="layer"><img class="center" src="layer2.png" id="myimage2" style="height: 100vh; width:60%; " />
+        <div class="layer h-100vh w-60"><img class="center h-100vh w-60" src="layer2.png" id="myimage2" />
         </div>
     </div>
     <script>
